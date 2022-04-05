@@ -1,0 +1,44 @@
+body  {  
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+h1{
+  background-image: url("sakura.gif");
+  background-size: auto;
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 1px solid  gray ;
+  margin: 0;
+  padding: 20px;
+}
+
+#index_list{
+  font-size: 100%;
+  border-right: 1px solid gray;
+  width: 150px;
+  padding-right: 35px;
+  margin:0;
+}
+#information{
+  display: grid;
+  grid-template-columns: 150px 2fr 2300px;
+  border-bottom: 1px solid  gray;
+  border-right: 1px solid gray;
+
+}
+#presentation{
+  padding-left:40px;
+  margin: 0;
+
+}
+#profile{
+  text-align: center;
+}
+#profile_mention{
+  padding-left: 20px;
+  font-size: 25px
+
+
+}
