@@ -1,0 +1,2 @@
+hello world!
+file creat and write

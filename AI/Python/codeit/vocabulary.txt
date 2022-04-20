@@ -1,0 +1,4 @@
+cat:고양이
+dog:강아지
+cow:소
+monkey:원숭이
