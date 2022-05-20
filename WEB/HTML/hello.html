@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+        <!--주석은 화면에 표시되지 않는다.-->
+        <!-- <!DOCTYPE html> (HTML 5) -->
+        <!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> (HTML 4.01) -->
+        <!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> (XHTML 1.0) -->
+        <!-- <html lang ="ko"> : 글로벌 어트리뷰트 한국어를 주언어로 사용하는 경우 예 -->
+<html lang ="ko">
+    <head>
+        <meta charset="utf-8"> <!--브라우저가 사용할 문자셋 정의--> 
+       <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">  <!-- SEO(검색엔진 최적화)를 위해 검색엔진이 사용할 keywords을 정의한다. -->
+       <meta name="description" content="Web tutorials on HTML and CSS"> <!--웹페이지의 설명을 정의한다.-->
+       <meta name="author" content="SH"> <!--웹페이지의 저자을 명기한다.-->
+       <meta http-equiv="refresh" content="30"> <!--웹페이지를 30초 마다 Refresh한다.-->
+        <title>Hello World<!-- 문서제목--></title>
+        <style>
+            body{
+                background-color: green;
+                color: black;
+            }
+        </style>
+        <!-- <link rel="stylesheet" href="style.css"> : link 요소에는 외부 리소스와의 연계 정보를 정의한다. 주로 HTML과 외부 CSS 파일을 연계에 사용된다 -->
+        <!-- <script> document.addEventListener('click', function () {alert('Clicked!')});</script> -->
+        <!-- <script src="C:/Users/user/Desktop/대구AI스쿨/Project/WEB/main.html"></script> src 어트리뷰트를 사용하면 외부 파일을 로드할 수 있다. -->
+    </head>
+    <body>
+        <!--화면에 표시할 모든 콘텐츠는 이곳에 기술한다.-->
+        <!-- body tag는 HTML 문서의 내용을 나타내며 웹페이지에 단 하나만 존재한다. 메타데이터를 제외한 웹페이지를 구성하는 대부분의 요소가 body 요소 내에 기술된다. -->
+        <font size = "6"><b>Hello</b></font>
+        <!--제목 (Headings) 태그 
+        Heading 태그는 제목을 나타낼 때 사용하며 h1에서 h6까지의 태그가 있다. h1이 가장 중요한 제목을 의미하며 글자의 크기도 가장 크다.
+        시맨틱 웹의 의미를 살려서 제목 이외에는 사용하지 않는 것이 좋다. 검색엔진은 제목 태그를 중요한 의미로 받아들일 가능성이 크다.
+        -->
+        <h1>Hello World</h1>
+        <h1>heading 1</h1>
+        <h2>heading 2</h2>
+        <h3>heading 3</h3>
+        <h4>heading 4</h4>
+        <h5>heading 5</h5>
+        <h6>heading 6</h6>
+
+        <!-- 글자 형태 (Text Formatting) 태그 -->
+        <b>This text is bold.</b>
+        <p style="font-weight: bold;">This text is bold.</p>
+        <!-- b tag와 동일하게 bold체를 지정한다. 하지만 의미론적(Semantic) 중요성의 의미를 갖는다
+            표현되는 외양은 b tag와 동일하지만 웹표준을 준수하고자 한다면 strong를 사용하는 것이 바람직하다. -->
+        <strong>This text is strong.</strong>
+        
+        <!-- Italic체를 지정한다. 의미론적(Semantic) 중요성의 의미는 없다. -->
+        <i>This text is italic.</i>
+        <p style="font-style: italic;">This text is italic.</i>
+        
+        <!-- emphasized(강조, 중요한) text를 지정한다. i tag와 동일하게 Italic체로 표현된다. 의미론적(Semantic) 중요성의 의미를 갖는다. -->
+        <em>This text is emphasized.</em>
+        
+        <!--small text를 지정한다.-->
+        <h2>HTML <small>Small</small> Formatting</h2>
+
+        <!--highlighted text를 지정한다.-->
+        <h2>HTML <mark>Marked</mark> Formatting</h2>
+        
+        <!--deleted (removed) text를 지정한다.-->
+        <p>My favorite color is <del>blue</del> red.</p>
+        
+        <!--inserted (added) text를 지정한다.-->
+        <p>My favorite <ins>color</ins> is red.</p>
+
+        <!--sub 태그는 subscripted(아래에 쓰인) text를 sup 태그는 superscripted(위에 쓰인) text를 지정한다.-->
+        <p>This is <sub>subscripted</sub> text.</p>
+        <p>This is <sup>superscripted</sup> text.</p>
+
+        <!--본문 태그 - p : 단락 (Paragraphs)을 지정한다.-->
+
+        <p>안녕하세요! HTML5</p>
+        <p>안녕하세요</p>
+        <p>Hello</p>
+        <p>こんにちは</p>
+        <p>你好</p>
+        <p>שלום</p>
+        <p>สวัสดี</p>
+        
+        <!--br tag는 (강제)개행 (line break)을 지정한다. br tag는 빈 요소(empty element)로 종료태그가 없다.-->
+        <p>This is<br>a para<br>graph with line breaks</p>
+
+        <!--연속적 공백을 삽입하는 방법 -->
+        <p>This is&nbsp; a para&nbsp; &nbsp; graph</p>
+
+        <!-- 형식화된(preformatted) text를 지정한다. pre 태그 내의 content는 작성된 그대로 브라우저에 표시된다. -->
+
+        <pre>
+            var myArray = [];
+            console.log(myArray.length); // 0
+            
+            myArray[1000] = true;  // [ , , ... , , true ]
+            
+            console.log(myArray.length); // 1001
+            console.log(myArray[0]);     // undefined
+        </pre>
+
+        <!--수평줄을 삽입한다.-->
+        <hr>
+        
+        <!--짧은 인용문(quotation)을 지정한다. 브라우저는 인용부호(큰따옴표/quotation marks)로 q 요소를 감싼다.-->
+        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+        <!--긴 인용문 블록을 지정한다. 브라우저는 blockquote 요소를 들여쓰기한다. css를 이용하여 다양한 style을 적용할 수 있다-->
+        <blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </blockquote>
+
+        <!--하이퍼링크(hyper link)-->
+        <a href="http://www.google.com">Visit google.com!</a>
+        <!--href 어트리뷰트는 이동하고자 하는 파일의 위치(경로)를 값으로 받는다. 경로(path)란 파일 시스템 상에서 특정 파일의 위치를 의미한다.-->
+        <!--디렉터리는 파일과 다른 디렉터리를 갖는 파일 시스템 내의 존재물로서 폴더라고도 불리운다.-->
+        <!--루트 디렉터리
+            파일 시스템 계층 구조 상의 최상위 디렉터리이다.
+            Unix: /
+            Windows: C:\-->
+
+        <!--홈 디렉터리
+            시스템의 사용자에게 각각 할당된 개별 디렉터리이다.
+            Unix: /Users/{계정명}
+            Windows: C:\Users\{계정명}-->
+        
+        <!--작업 디렉터리
+            작업 중인 파일의 위치한 디렉터리이다.
+            ./-->
+        <!--부모 디렉터리
+            작업 디렉터리의 부모 디렉토리이다.
+            ../-->    
+
+        <!--파일 경로(File path)-->
+        <!--파일 경로는 파일 시스템에서 파일의 위치를 나타내는 방법이다. 경로에는 절대경로와 상대경로가 있다.-->
+        <!--
+            절대경로(Absolute path)
+            현재 작업 디렉터리와 관계없이 특정 파일의 절대적인 위치를 가리킨다. 루트 디렉터리를 기준으로 파일의 위치를 나타낸다.
+            http://www.mysite.com/index.html
+            /Users/leeungmo/Desktop/myImage.jpg
+            C:\users\leeungmo\Desktop\myImage.jpg
+            /index.html
+
+            상대경로(Relative path)
+            현재 작업 디렉터리를 기준으로 특정 파일의 상대적인 위치를 가리킨다.
+            ./index.html
+            ../dist/index.js
+            ../../dist/index.js
+            index.html
+            html/index.html
+
+            절대 URL : 웹사이트 URL (href=”http://www.example.com/default.html”)
+            상대 URL : 자신의 위치를 기준으로한 대상의 URL (href=”html/default.html”)
+            fragment identifier : 페이지 내의 특정 id를 갖는 요소에의 링크 (href=”#top”)
+            메일: mailto:
+            script : href=”javascript:alert(‘Hello’);”
+            <a href="http://www.google.com">URL</a><br>
+            <a href="html/my.html">Local file</a><br>
+            <a href="file/my.pdf" download>Download file</a><br>
+            <a href="#">fragment identifier</a><br>
+            <a href="mailto:someone@example.com?Subject=Hello again">Send Mail</a><br>
+            <a href="javascript:alert('Hello');">Javascript</a>
+        -->
+
+        <img src = 'data:image/jpeg;base64,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', width="104", height="142">
+        
+        <!-- fragment identifier를 이용한 페이지 내부 이동 방법 -->
+        <a href="#top">Go to top</a>
+       
+        <!--_self : 링크를 클릭했을 때 연결문서를 현재 윈도우에서 오픈한다 (기본값)-->
+        <!--_blank : 링크를 클릭했을 때 연결문서를 새로운 윈도우나 탭에서 오픈한다-->
+        <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Visit google.com!</a>
+
+        <!-- target="_blank"를 사용해 외부 페이지를 오픈하는 경우, 이동한 외부 페이지에서 자바스크립트 코드를 사용해 악의적인 페이지로 리다이렉트할 수 있는 보안 취약점(Tabnabbing 피싱 공격)이 있다. 
+            따라서 rel="noopener noreferrer"를 추가해 Tabnabbing 피싱 공격에 대비할 것을 권장한다 -->
+
+        <h2>순서없는 목록 (Unordered List)</h2>   
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        
+        <h2>순서있는 목록 (Ordered List)</h2>
+        <ol>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ol>
+
+        <!--type 어트리뷰트를 사용하여 순서를 나타내는 문자를 지정할 수 있다
+            “1” : 숫자 (기본값)
+            “A” : 대문자 알파벳
+            “a” : 소문자 알파벳
+            “I” : 대문자 로마숫자
+            “i” : 소문자 로마숫자
+
+        -->
+        <ol type="I">
+            <li value="2">Coffee</li>
+            <li value="4">Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <!--start 어트리뷰트로 리스트의 시작값을 지정할 수 있다.-->
+        <ol start="3">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <!-- reversed 어트리뷰트를 지정하면 리스트의 순서값을 역으로 표현한다. -->
+        <ol reversed>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <h2>중첩 목록</h2>
+        <ul>
+          <li>Coffee</li>
+          <li>Tea
+            <ol>
+              <li>Black tea</li>
+              <li>Green tea</li>
+            </ol>
+          </li>
+          <li>Milk</li>
+        </ul>
+        <!--목록 태그는 내비게이션 메뉴를 만들 때 자주 사용된다.-->
+
+        <!--
+            표(table)를 만들 때 사용하는 태그이다. 과거에는 테이블 태그를 사용하여 레이아웃을 구성하기도 하였으나 모던 웹에서는 주로 공간 분할 태그인 div 태그를 사용하여 레이아웃을 구성한다.
+            table : 표를 감싸는 태그
+            tr : 표 내부의 행 (table row)
+            th : 행 내부의 제목 셀 (table heading)
+            td : 행 내부의 일반 셀 (table data)
+        -->
+        <img src ="https://poiemaweb.com/img/html_table_structure.gif">
+
+        <table border="1">
+            <tr>
+              <th>First name</th>
+              <th>Last name</th>
+              <th>Score</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>80</td>
+            </tr>
+        </table>
+
+        <!--
+            border : 표 테두리 두께 지정. (CSS border property를 사용하는 것이 더 나은 방법이다.)
+            rowspan : 해당 셀이 점유하는 행의 수 지정
+            colspan : 해당 셀이 점유하는 열의 수 지정
+        -->
+
+        <style>
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            th, td {
+              padding: 15px;
+            }
+        </style>
+        <h2>2개의 culumn을 span</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Telephone</th>
+            </tr>
+            <tr>
+                <td>Bill Gates</td>
+                <td>555 77 854</td>
+                <td>555 77 855</td>
+            </tr>
+        </table>
+
+    <h2>2개의 row를 span</h2>
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone:</th>
+            <td>555 77 854</td>
+        </tr>
+        <tr>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+    <!--웹페이지에 이미지를 삽입하는 경우, img tag를 사용한다. -->
+    <img src="data:image/jpeg;base64,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" alt="아이유" width="100">
+    <img src="" alt="아이유가 없습니다.">
+
+    <!--미디어
+        audio 태그는 HTML5에서 새롭게 추가된 태그이다. IE8 이하에서는 사용할 수 없다.
+        src : 음악 파일 경로
+        preload : 재생 전에 음악 파일을 모두 불러올 것인지 지정
+        autoplay : 음악 파일을 자동의 재생 개시할 것인지 지정
+        loop : 음악을 반복할 것인지 지정
+        controls : 	음악 재생 도구를 표시할 것인지 지정. 재생 도구의 외관은 브라우저마다 차이가 있다.
+
+        
+    -->
+    <!-- <audio src="https://bgmstore.net/view/wUTma" controls></audio> -->
+
+    <!--source 태그를 사용하여 파일 형식의 차이 문제를 해결 할 수 있다. type 어트리뷰트는 생략 가능하다.-->
+    <audio controls>
+        <source src="https://bgmstore.net/view/wUTma" type="audio/mpeg">
+        <!-- <source src="https://bgmstore.net/view/wUTma" type="audio/ogg"> -->
+    </audio>
+
+    <!--video 태그는 HTML5에서 새롭게 추가된 태그이다. IE8 이하에서는 사용할 수 없다.
+        src : 동영상 파일 경로
+        poster : 동영상 준비 중에 표시될 이미지 파일 경로
+        preload : 재생 전에 동영상 파일을 모두 불러올 것인지 지정
+        autoplay : 동영상 파일을 자동의 재생 개시할 것인지 지정
+        loop : 동영상을 반복할 것인지 지정
+        controls : 동영상 재생 도구를 표시할 것인지 지정. 재생 도구의 외관은 브라우저마다 차이가 있다.
+        width : 동영상의 너비를 지정
+        height : 동영상의 높이를 지정
+
+        audio 태그와 마찬가지로 파일 형식의 차이 문제가 발생할 수 있다. source 태그를 사용하여 형식 차이 문제를 해결한다. type 어트리뷰트는 생략 가능하다.
+    -->
+    <video width="640" height="360" controls>
+        
+        <source src="assets/video/wildlife.mp4" type="video/mp4">
+        <source src="assets/video/wildlife.webm" type="video/webm"> 
+             
+        
+    </video>
+
+    <!--form 태그는 사용자가 입력한 데이터를 수집하기 위해 사용되며 input, textarea, button, select, checkbox, radio button, submit button 등의 입력 양식 태그를 포함할 수 있다.
+        action : URL 입력 데이터(form data)가 전송될 URL 지정
+        method : get / post 입력 데이터(form data) 전달 방식 지정
+    -->
+
+    <!--GET
+        GET 방식은 전송 URL에 입력 데이터를 쿼리스트링으로 보내는 방식이다.
+        예) http://jsonplaceholder.typicode.com/posts?userId=1&id=1
+        전송 URL 바로 뒤에 ‘?’를 통해 데이터의 시작을 알려주고, key-value형태의 데이터를 추가한다. 1개 이상의 전송 데이터는 ‘&’로 구분한다.
+        URL에 전송 데이터가 모두 노출되기 때문에 보안에 문제가 있으며 전송할 수 있는 데이터의 한계가 있다. (최대 255자).
+        REST API에서 GET 메소드는 모든 또는 특정 리소스의 조회를 요청한다.
+    
+        POST
+        POST 방식은 Request Body에 담아 보내는 방식이다.
+        예) http://jsonplaceholder.typicode.com/posts
+        URL에 전송 데이터가 모두 노출되지 않지만 GET에 비해 속도가 느리다.
+        REST API에서 POST 메소드는 특정 리소스의 생성을 요청한다.
+    -->
+    <img src = "https://poiemaweb.com/img/HTTP_request+response_message.gif">
+
+    <form action="C:/Users/user/Desktop/대구AI스쿨/Project/WEB/main.html" method="get">
+      ID: <input type="text" name="id" value="1"><br>
+      username: <input type="text" name="username" value="Bret"><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <!-- 2. input
+        input 태그는 form 태그 중에서 가장 중요한 태그로 사용자로부터 데이터를 입력받기 위해 사용된다.
+        input 태그는 다양한 종류가 있는데 type 어트리뷰트에 의해 구분된다. form 태그 내에 존재하여야 입력 데이터를 전송할 수 있으나 ajax를 사용할 시에는 form 태그 내에 존재하지 않아도 된다.
+        서버에 전송되는 데이터는 name 어트리뷰트를 키로, value 어트리뷰트를 값으로하여 key=value의 형태로 전송된다.-->
+
+    <img src="./html_input.png">
+
+    <h3>button</h3>
+    <input type="button" value="Click me" onclick="alert('Hello world!')">
+    <hr>
+
+    <h3>checkbox</h3>
+    <input type="checkbox" name="fruit1" value="apple" checked> 사과<br>
+    <input type="checkbox" name="fruit2" value="grape"> 포도<br>
+    <input type="checkbox" name="fruit3" value="peach"> 복숭아<br>
+    <hr>
+
+    <h3>color</h3>
+    <input type="color" name="mycolor">
+    <hr>
+
+    <h3>date</h3>
+    <input type="date" name="birthday">
+    <hr>
+
+    <h3>datetime</h3>
+    <input type="datetime" name="birthdaytime">
+    <hr>
+
+    <h3>datetime-local</h3>
+    <input type="datetime-local" name="birthdaytime">
+    <hr>
+
+    <h3>email</h3>
+    <input type="email" name="useremail">
+    <hr>
+
+    <h3>file</h3>
+    <input type="file" name="myfile">
+    <hr>
+
+    <h3>hidden</h3>
+    <input type="hidden" name="country" value="Norway">
+    <!-- hidden filed는 사용자에 표시되지 않는다. -->
+    <hr>
+
+    <h3>image</h3>
+    <input type="image" src="img/img_submit.gif" alt="Submit" width="48" height="48">
+    <hr>
+
+    <h3>month</h3>
+    <input type="month" name="birthdaymonth">
+    <hr>
+
+    <h3>number</h3>
+    <input type="number" name="quantity" min="2" max="10" step="2" value="2">
+    <hr>
+
+    <h3>password</h3>
+    <input type="password" name="pwd">
+    <hr>
+
+    <h3>radio</h3>
+    <input type="radio" name="gender" value="male" checked> 남자<br>
+    <input type="radio" name="gender" value="female"> 여자<br>
+    <hr>
+
+    <h3>range</h3>
+    <input type="range" name="points" min="0" max="10" step="1" value="5">
+    <hr>
+
+    <h3>reset</h3>
+    <input type="reset">
+    <hr>
+
+    <h3>search</h3>
+    <input type="search" name="googlesearch">
+    <hr>
+
+    <h3>submit</h3>
+    <input type="submit" value="Submit">
+    <hr>
+
+    <h3>tel</h3>
+    <input type="tel" name="mytel">
+    <hr>
+
+    <h3>text</h3>
+    <input type="text" name="myname">
+    <hr>
+
+    <h3>time</h3>
+    <input type="time" name="mytime">
+    <hr>
+
+    <h3>url</h3>
+    <input type="url" name="myurl">
+    <hr>
+
+    <h3>week</h3>
+    <input type="week" name="week_year">
+    <!-- 3. select
+        복수개의 리스트에서 복수개의 아이템을 선택할 때 사용한다. 함께 사용할 수 있는 태그는 다음과 같다.
+        서버에 전송되는 데이터는 select 요소의 name 어트리뷰트를 키로, option 요소의 value 어트리뷰트를 값으로하여 key=value의 형태로 전송된다. -->
+        <select name="cars1">
+            <option value="volvo" selected>Volvo</option>
+            <option value="saab" disabled>Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+          </select>
+      
+          <select name="cars2" size="4" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi" selected>Audi</option>
+          </select>
+      
+          <select name="cars3">
+            <optgroup label="Swedish Cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars" disabled>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </optgroup>
+          </select>
+          <!-- 
+              4. textarea
+              textarea 태그는 여러 줄의 글자를 입력할 때 사용한다. -->
+              <textarea name="message" rows="10" cols="30">Write something here</textarea>
+
+              <!-- 5. button
+                button 태그는 클릭할 수 있는 버튼을 생성한다. <input type="button">과 유사하지만 input 태그는 빈 태그인 반면 button 태그는 그렇지 않다. 
+                따라서 button 요소에는 텍스트나 이미지 같은 콘텐츠를 사용할 수 있다.
+                type 어트리뷰트는 반드시 지정하는 것이 바람직하며 어트리뷰트값으로 button, reset, submit를 지정할 수 있다. -->
+                <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+                <input type="button" value="Click Me!" onclick="alert('Hello world!')">
+                <!-- button 태그는 어트리뷰트만을 받아들이는 input 태그와 달리 콘텐츠로 문자열은 물론 HTML 요소를 받을 수도 있다는 장점이 있다. 
+                    주의할 것은 IE의 경우, submit되는 값이 다를 수 있는 것이다. -->
+                <button type="submit" name="myButton" value="foo">Click me</button>
+
+                <!--fieldset 태그는 관련된 입력 양식들을 그룹화할 때 사용한다. legend 태그는 fieldset 태그 내에서 사용되야 하며 그룹화된 fieldset의 제목을 정의한다.-->
+                <fieldset>
+                    <legend>Login</legend>
+                    Username <input type="text" name="username">
+                    Password <input type="text" name="password">
+                </fieldset>
+
+        <!--웹페이지의 레이아웃을 구성하기 위해서 공간을 분할할 필요가 있다.-->
+                <img src = "https://poiemaweb.com/img/html-layout.png">
+        <!--공간을 분할할 수 있는 태그는 div, span, table 등이 있는데, 과거에는 table 태그를 사용하여 레이아웃을 구성하기도 하였으나 모던 웹에서는 주로 div를 사용하여 레이아웃을 구성한다.
+            그런데 div 태그는 의미론적으로 어떠한 의미도 가지고 있지 않기 때문에 아래와 같이 HTML5에서 새롭게 추가된 시맨틱 태그를 사용하는 것이 더 나은 방법이나
+             IE에서 작동하지 않기 때문에 주의가 필요하다.
+            header: 헤더를 의미한다
+            nav : 내비게이션을 의미한다
+            aside : 사이드에 위치하는 공간을 의미한다
+            section : 본문의 여러 내용(article)을 포함하는 공간을 의미한다
+            article : 분문의 주내용이 들어가는 공간을 의미한다
+            footer : 푸터를 의미한다
+         -->
+
+         <img src="https://poiemaweb.com/img/building-structure.png">
+         <!-- 
+             이와 같은 공간 분할 태그는 일반적으로 다른 요소를 포함하는 컨테이너 역할을 하게 된다.
+             div와 span의 차이는 block 레벨 요소와 inline 레벨 요소를 이해하여야 한다.
+             이에 대한 자세한 내용은 display 프로퍼티를 참조하기 바란다. -->
+        </body>
+</html>
