@@ -43,8 +43,8 @@ def selenium_scroll_option() :
             break
         last_height = new_height
 
-a = "상어"
-image_name = "shark"
+a = "망고"
+image_name = 'mango'
 driver = webdriver.Chrome(chrome_path)
 driver.get("http://www.google.co.kr/imghp?hl=ko")
 browser = driver.find_element_by_name('q')
@@ -74,20 +74,20 @@ print(f"전체 다운로드한 이미지 개수 : {len(image_url)}")
 image_url = pd.DataFrame(image_url)[0].unique()
 
 # 해당하는 파일에 이미지 다운로드
-os.makedirs(r"D:\study\DaeguAI\Project\AI\DataAnalysis\DaegueAIschool\web_crawler\src\result_file\animal\raw_animal_image\shark", exist_ok=True)
-shark = "D:/study/DaeguAI/Project/AI/DataAnalysis/DaegueAIschool/web_crawler/src/result_file/animal/raw_animal_image/shark/"
+os.makedirs(r"D:\study\DaeguAI\Project\AI\DataAnalysis\DaegueAIschool\web_crawler\src\result_file\fruit\mango", exist_ok=True)
+mango = "D:/study/DaeguAI/Project/AI/DataAnalysis/DaegueAIschool/web_crawler/src/result_file/fruit\mango"
 
-if image_name == 'shark' :
+if image_name == 'mango' :
     for t, url in enumerate(image_url, 0) :
-        urlretrieve(url, shark + image_name + "_" + str(t) + ".png")
+        urlretrieve(url, mango + image_name + "_" + str(t) + ".png")
 
     # driver.close()
 
-print(shark)
-print("상어 완료")
+print(mango)
+print("망고 완료")
 
-b = "돌고래"
-image_name = "dolphin"
+b = "Dragon fruit"
+image_name = "Dragon_fruit"
 driver = webdriver.Chrome(chrome_path)
 driver.get("http://www.google.co.kr/imghp?hl=ko")
 browser = driver.find_element_by_name('q')
@@ -117,18 +117,18 @@ print(f"전체 다운로드한 이미지 개수 : {len(image_url)}")
 image_url = pd.DataFrame(image_url)[0].unique()
 
 # 해당하는 파일에 이미지 다운로드
-os.makedirs(r"D:\study\DaeguAI\Project\AI\DataAnalysis\DaegueAIschool\web_crawler\src\result_file\animal\raw_animal_image\dolphin", exist_ok=True)
-dolphin = "D:/study/DaeguAI/Project/AI/DataAnalysis/DaegueAIschool/web_crawler/src/result_file/animal/raw_animal_image/dolphin/"
-if image_name == 'dolphin' :
+os.makedirs(r"D:\study\DaeguAI\Project\AI\DataAnalysis\DaegueAIschool\web_crawler\src\result_file\fruit\Dragon_fruit", exist_ok=True)
+Dragon_fruit = "D:/study/DaeguAI/Project\AI/DataAnalysis/DaegueAIschool/web_crawler/src/result_file/fruit/Dragon_fruit/"
+if image_name == 'Dragon_fruit' :
     for t, url in enumerate(image_url, 0) :
-        urlretrieve(url, dolphin + image_name + "_" + str(t) + ".png")
+        urlretrieve(url, Dragon_fruit + image_name + "_" + str(t) + ".png")
 
     # driver.close()
 
-print("돌고래 완료")
+print("용과 완료")
 
-c = "고래"
-image_name = "whale"
+c = "lychee"
+image_name = "lychee"
 driver = webdriver.Chrome(chrome_path)
 driver.get("http://www.google.co.kr/imghp?hl=ko")
 browser = driver.find_element_by_name('q')
@@ -158,12 +158,55 @@ print(f"전체 다운로드한 이미지 개수 : {len(image_url)}")
 image_url = pd.DataFrame(image_url)[0].unique()
 
 # 해당하는 파일에 이미지 다운로드
-os.makedirs(r"D:\study\DaeguAI\Project\AI\DataAnalysis\DaegueAIschool\web_crawler\src\result_file\animal\raw_animal_image\whale", exist_ok=True)
-whale = "D:/study/DaeguAI/Project/AI/DataAnalysis/DaegueAIschool/web_crawler/src/result_file/animal/raw_animal_image/whale/"
-if image_name == 'whale' :
+os.makedirs(r"D:\study\DaeguAI\Project\AI\DataAnalysis\DaegueAIschool\web_crawler\src\result_file\fruit\lychee", exist_ok=True)
+lychee = "D:/study/DaeguAI/Project/AI/DataAnalysis/DaegueAIschool/web_crawler/src/result_file/fruit/lychee"
+if image_name == 'lychee' :
     for t, url in enumerate(image_url, 0) :
-        urlretrieve(url, whale + image_name + "_" + str(t) + ".png")
+        urlretrieve(url, lychee + image_name + "_" + str(t) + ".png")
 
     driver.close()
 
-print("고래 완료")
+print("리치 완료")
+
+d = "durian"
+image_name = "durian"
+driver = webdriver.Chrome(chrome_path)
+driver.get("http://www.google.co.kr/imghp?hl=ko")
+browser = driver.find_element_by_name('q')
+browser.send_keys(c)
+browser.send_keys(Keys.RETURN)
+
+# //*[@id="islmp"]/div/div/div/div[1]/div[2]/div[2]/input
+selenium_scroll_option()# 스크롤 하여 이미지 확보
+driver.find_element_by_xpath(
+    '//*[@id="islmp"]/div/div/div/div[1]/div[2]/div[2]/input').click()
+selenium_scroll_option()
+
+# 이미지 저장 src 요소를 리스트업 해서 이미지 url 저장
+image = driver.find_elements_by_css_selector(".rg_i.Q4LuWd")
+# 클래스 네임에서 공백은 . 을 찍어줌
+
+print(image)
+image_url = []
+for i in image:
+    if i.get_attribute("src") != None :
+        image_url.append(i.get_attribute("src"))
+    else :
+        image_url.append(i.get_attribute("data-src"))
+
+# 전체 이미지 개수
+print(f"전체 다운로드한 이미지 개수 : {len(image_url)}")
+image_url = pd.DataFrame(image_url)[0].unique()
+
+# 해당하는 파일에 이미지 다운로드
+os.makedirs(r"D:\study\DaeguAI\Project\AI\DataAnalysis\DaegueAIschool\web_crawler\src\result_file\fruit\durian", exist_ok=True)
+lychee = "D:/study/DaeguAI/Project/AI/DataAnalysis/DaegueAIschool/web_crawler/src/result_file/fruit/durian"
+if image_name == 'durian' :
+    for t, url in enumerate(image_url, 0) :
+        urlretrieve(url, dorian + image_name + "_" + str(t) + ".png")
+
+    driver.close()
+
+print("리치 완료")
+
+
