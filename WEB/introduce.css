@@ -1,0 +1,209 @@
+div {
+    margin: 0px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.navbar {
+    margin-top: 10%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    line-height: 100px;
+}
+.navbar h1{
+    padding-left: 30px;
+}
+
+.footer {
+    height: 100px;
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: right;
+    line-height: 100px;   
+}
+
+.footer h1 {
+    padding-right: 30px;
+}
+
+.main_menu {
+    background-color: white;
+    width: 100%;    
+}
+.circle_border {
+    border: 0px solid red;
+    border-radius: 160px;
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    text-align: center;
+    line-height: 250px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.circle_border a {
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+#circle_wrap {
+    margin-top: 60px;
+    height: 300px;
+    width: 1600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    padding: 0px;
+}
+
+.circle_border:hover{
+    background-color: skyblue;
+    
+}
+
+.circle_border a:hover{
+    text-decoration:overline;
+}
+
+.block {
+    height: 450px;
+}
+.Career {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 160px;
+    height: 100px;
+    line-height: 250px;
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.Career_info_company{
+    border: 0 solid black;
+    border-radius: 160px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    line-height: 200px;
+    padding: 10px;
+    position: relative;
+    top: 60px;
+    left: 350px;
+    text-align: center;
+    font-weight: bold;
+    overflow: auto;
+}
+
+.Career_info_wolkingday {
+    text-align: center;
+    font-size: 32px;
+    position: relative;
+    bottom: 115px 
+}
+
+.line_design {
+    border: 3px solid red;
+    position: relative;
+    bottom: 160px;
+    width: 1500px;
+    float: right;
+}
+
+.Career_info_company::-webkit-scrollbar{
+    display: none;
+    width: 0 !important;
+}
+
+.Career_info_skills_1 {
+    border: 0 solid black;
+    border-radius: 160px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    line-height: 200px;
+    padding: 10px;
+    position: relative;
+    top: 60px;
+    left: 350px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.Career_info_wolkingday_skill img {
+    width: 220px;
+    height: 130px;
+    float: right;
+    line-height: 200px;
+    
+}
+
+.Career_info_wolkingday_skill {
+    text-align: center;
+    font-size: 32px;
+    position: relative;
+    bottom: 115px;
+}
+
+.line_design_1 {
+    border: 3px solid red;
+    position: relative;
+    bottom: 140px;
+    width: 1500px;
+    float: right;
+}
+
+.Career_info_wolkingday_skill h4{
+    text-align: right;
+}
+
+.Career_info_skills_2 {
+    border: 0 solid black;
+    border-radius: 160px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    line-height: 200px;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    left: 350px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.line_design_2 {
+    border: 3px solid red;
+    position: relative;
+    bottom: 200px;
+    width: 1500px;
+    float: right;
+}
+
+.Career_info_wolkingday_skill_2 {
+    text-align: right;
+    font-size: 32px;
+    position: relative;
+    bottom: 170px;
+}
