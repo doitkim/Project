@@ -125,6 +125,7 @@ body {
     bottom: 160px;
     width: 1500px;
     float: right;
+    opacity: 0.6;
 }
 
 .Career_info_company::-webkit-scrollbar{
@@ -150,8 +151,8 @@ body {
 }
 
 .Career_info_wolkingday_skill img {
-    width: 220px;
-    height: 130px;
+    width: 200px;
+    height: 80px;
     float: right;
     line-height: 200px;
     
@@ -170,6 +171,7 @@ body {
     bottom: 140px;
     width: 1500px;
     float: right;
+    opacity: 0.6;
 }
 
 .Career_info_wolkingday_skill h4{
@@ -199,6 +201,7 @@ body {
     bottom: 200px;
     width: 1500px;
     float: right;
+    opacity: 0.6;
 }
 
 .Career_info_wolkingday_skill_2 {
@@ -206,4 +209,35 @@ body {
     font-size: 32px;
     position: relative;
     bottom: 170px;
+}
+
+.line_design_3 {
+    border: 3px solid red;
+    position: relative;
+    bottom: 80px;
+    width: 1500px;
+    float: right;
+    opacity: 0.6;
+}
+
+.stack_skill {
+    border: 0 solid black;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-image: url("./image/skilltree.webp");
+    width: 800px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line_design_3 {
+    border: 3px solid red;
+    position: relative;
+    bottom: 100px;
+    width: 1500px;
+    float: right;
+    opacity: 0.6;
 }
