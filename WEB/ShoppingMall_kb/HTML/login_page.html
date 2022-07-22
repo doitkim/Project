@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지 기능 구현</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+    <div id="form_style">
+        <form id="login_form" onsubmit="return false;" method="post" autocomplete="off">
+            <div>아이디: <input id="ID" type="text"></div>
+            <div>비밀번호: <input id="PW" type="text"></div>
+            <button id="login_submit" hidden></button>
+            <a href="./User_register.html">회원가입</a>
+        </form>
+    </div>
+    <script src="../JS/login_page.js"></script>
+    <script src="../JS/User_Set_localstorage.js"></script>
+    
+</body>
+</html>

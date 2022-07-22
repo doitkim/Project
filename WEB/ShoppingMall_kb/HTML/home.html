@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- 네비게이션 바의 height 는 60px 입니다.
+로고의 width 는 149px, height 는 20px 입니다.
+네비게이션 바의 메뉴들은 클릭하면 페이지 최상단으로 이동합니다. # 를 활용해주세요.
+hero_header.jpg 는 배경이미지로 들어가고, 배경이미지가 들어가는 영역은 450px 의 height를 가집니다.
+각 상품들을 클릭하면 페이지 최상단으로로 이동합니다.
+이미지의 테두리는 클릭 영역 표시를 위한 것이고, 직접 구현하지는 않아도 됩니다.
+페이스북, 인스타그램, 트위터 아이콘의 height는 20px로 지정해 주세요. -->
+<html>
+  <head>
+    <title>SimpleShop</title>
+    <meta charset="utf-8" />
+    <link href="../CSS/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+      <div class="navbar">
+        <a href="#" id="logo">
+            <img src="../Image/logo.png" width="149">
+        </a>
+
+        <ul id="menu">
+            <li><a href="mailto:yes2721@naver.com">Contact</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="./login_page.html" onClick="window.open(this.href, '', 'width=250px, height=240px'); return false;">Login</a></li>
+        </ul>
+    </div>
+      <div class="hero-header"></div>
+
+      <div class="products">
+        <h3>Our New prodoucts</h3>
+
+            <div class="product-list">
+                <a href="#" class="product">
+                    <img src="../Image/sunglasses.jpg" width="225">
+                    <div class="product-name">
+                        Sunglasses
+                    </div>
+                    <div class="product-price">
+                        49,000
+                    </div>
+                </a>
+                <a href="#" class="product">
+                    <img src="../Image/tassel_loafer.jpg" width="225">
+                    <div class="product-name">
+                        Tassel loafer
+                    </div>
+                    <div class="product-price">
+                        89,000
+                    </div>
+                </a>
+                <a href="#" class="product">
+                    <img src="../Image/beige_bag.jpg" width="225">
+                    <div class="product-name">
+                        Beige bag
+                    </div>
+                    <div class="product-price">
+                        69,000
+                    </div>
+                </a>
+                <a href="#" class="product">
+                    <img src="../Image/sneakers.jpg" width="225">
+                    <div class="product-name">
+                        Sneakers
+                    </div>
+                    <div class="product-price">
+                        79,000
+                    </div>
+                </a>
+                <a href="#" class="product">
+                    <img src="../Image/slippers.jpg" width="225">
+                    <div class="product-name">
+                        Slippers
+                    </div>
+                    <div class="product-price">
+                        29,000
+                    </div>
+                </a>
+                <a href="#" class="product">
+                    <img src="../Image/wrist_watch.jpg" width="225">
+                    <div class="product-name">
+                        Wrist watch
+                    </div>
+                    <div class="product-price">
+                        99,000
+                    </div>
+                </a>
+                <a href="#" class="product">
+                    <img src="../Image/fedora_hat.jpg" width="225">
+                    <div class="product-name">
+                        Fedora hat
+                    </div>
+                    <div class="product-price">
+                        39,000
+                    </div>
+                </a>
+                <a href="#" class="product">
+                    <img src="../Image/classic_loafer.jpg" width="225">
+                    <div class="product-name">
+                        Classic loafer
+                    </div>
+                    <div class="product-price">
+                        99,000
+                    </div>
+                </a>
+                <a href="#" class="product">
+                    <img src="../Image/pink_bag.jpg" width="225">
+                    <div class="product-name">
+                        Pink bag
+                    </div>
+                    <div class="product-price">
+                        79,000
+                    </div>
+                </a>
+                <div class="clearfix"></div>
+            </div>
+      </div>
+        <div class="footer">
+          <a href="https://www.facebook.com/"><img src="../Image/facebook.png" height="20"></a>
+          <a href="https://www.instagram.com/"><img src="../Image/instagram.png" height="20"></a>
+          <a href="https://twitter.com/?lang=ko"><img src="../Image/twitter.png" height="20"></a>
+        </div>
+        <script src="../JS/login_page.js"></script>
+        <script src="../JS/User_Set_localstorage.js"></script>
+  </body>
+</html>

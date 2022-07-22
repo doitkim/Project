@@ -1,0 +1,23 @@
+body {
+    background-color: beige;
+    overflow-x: hidden;
+}
+#login_form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form_style {
+    margin-top: 20%;
+    border: 0px solid red;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
