@@ -21,3 +21,18 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/* #login_info_body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+#login_info_body {
+    margin-top: 25%;
+    text-align: center;
+}
+
+.Loaeded {
+    margin-top: 20px;
+}

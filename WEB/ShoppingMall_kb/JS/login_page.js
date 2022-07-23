@@ -22,20 +22,14 @@
         // login_form.mothod = "GET";
         // login_form.submit();
         alert('로그인 성공');
-        document.write(`${id.value}님 어서오세요.<br>`);
-        document.write("회원 정보<br>");
-        document.write(`아이디: ${id.value}<br>`);
-        document.write(`비밀번호: ${pw.value}<br>`);
-        document.write(`이름: ${username}<br>`);
-        document.write(`주민등록번호: ${jumin_number}<br>`);
-        document.write(`주소: ${address}<br>`);
-        document.write(`핸드폰: ${hp}<br>`);
+        location.href ="/home/challenger/바탕화면/project/Shoppinmall_Project/HTML/user_info_view.html"
+      }
+      else{
+        alert('잘못된 비밀번호입니다.');
+      }
     }
     else{
-        alert('잘못된 비밀번호입니다.');
-    }
-  }
-  else{
-    alert('잘못된 아이디입니다.');
-  } 
-});
+      alert('잘못된 아이디입니다.');
+    } 
+  });
+

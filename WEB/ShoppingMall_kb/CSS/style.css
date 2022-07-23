@@ -76,6 +76,10 @@
       margin-right: 10px;
       margin-bottom: 80px;
   }
+
+  .product:hover {
+    box-shadow: 0.5px 0.5px 3px 2px gray;
+  }
   
   .product-name {
       margin-top: 20px;
