@@ -15,13 +15,12 @@ function getDownloadRecord(event) {
 function downloadTemplate(filename,chk_id,chk_pw,username,jumin_number,address,hp) {
     let element = document.createElement('a');
     element.setAttribute('href','data:text/plain;charset=utf-8,' + 
-    '회원 정보'+'\r'+ 
-    '아이디 : ' + encodeURIComponent(chk_id) +'\r'+ 
-    '비밀번호 : '+ encodeURIComponent(chk_pw) +'\r'+ 
-    '이름 : ' + encodeURIComponent(username) +'\r'+ 
-    '주민등록번호 : ' + encodeURIComponent(jumin_number) +'\r'+ 
-    '주소 : ' + encodeURIComponent(address) +'\r'+ 
-    '핸드폰 : ' + encodeURIComponent(hp)+'\r'
+    '아이디:' + encodeURIComponent(chk_id) + 
+    ':비밀번호:'+ encodeURIComponent(chk_pw) + 
+    ':이름:' + encodeURIComponent(username) +
+    ':주민등록번호:' + encodeURIComponent(jumin_number) +
+    ':주소:' + encodeURIComponent(address) +
+    ':핸드폰:' + encodeURIComponent(hp)
     );
     element.setAttribute('download', filename);
     element.style.display = 'none';
@@ -32,8 +31,16 @@ function downloadTemplate(filename,chk_id,chk_pw,username,jumin_number,address,h
 async function loadFile(file) {
     let text = await file.text();
     document.getElementById('output').textContent = text;
-    document.write(text);
+    text = text.split(":");
     
-
+    localStorage.setItem("ID", text[1]);
+    localStorage.setItem("PW", text[3]);
+    localStorage.setItem("name", text[5]);
+    localStorage.setItem("jumin_number", text[7]);
+    localStorage.setItem("address", text[9]);
+    localStorage.setItem("hp", text[11]);
+    
+    
+    
   }
 // data:text/plain;charset=utf-8
