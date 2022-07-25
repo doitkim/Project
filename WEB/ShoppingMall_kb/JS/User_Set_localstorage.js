@@ -15,5 +15,5 @@ localStorage.setItem("jumin_number", jumin_number.value);
 localStorage.setItem("address", address.value);
 localStorage.setItem("hp", hp.value);
 
-window.location.href = "/home/challenger/바탕화면/project/function_test/login_page/login_page.html";
+window.location.href = "/home/challenger/바탕화면/project/Shoppinmall_Project/HTML/login_page.html";
 });
