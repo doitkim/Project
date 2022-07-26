@@ -254,3 +254,28 @@ a {
 .Career a:hover {
     text-decoration:overline;
 }
+
+#form_style a {
+    color: black;
+}
+
+#form_style {
+    text-align: center;
+}
+
+#ID, #PW {
+    margin-top: 30px;
+}
+
+#PW {
+    margin-bottom: 30px;
+}
+
+button {
+    position: absolute;
+    top: 210px;
+    right: 20px;
+    border-radius: 100px;
+    height: 60px;
+    width: 60px;
+}

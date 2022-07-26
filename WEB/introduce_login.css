@@ -1,0 +1,47 @@
+body {
+    background-color: beige;
+    overflow-x: hidden;
+}
+#login_form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form_style {
+    margin-top: 20%;
+    border: 0px solid red;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* #login_info_body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+#login_info_body {
+    margin-top: 25%;
+    text-align: center;
+}
+
+.Loaeded {
+    margin-top: 20px;
+}
+
+button {
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 52%;
+    left: 55%;
+}
