@@ -1,15 +1,10 @@
-body {
-    background-color: beige;
-    overflow-x: hidden;
-}
-#login_form{
+#login_form #register{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 #form_style {
-    margin-top: 20%;
     border: 0px solid red;
     border-radius: 10px;
     height: 100%;
@@ -17,9 +12,18 @@ body {
     padding: 20px;
 }
 
-a {
+#register {
+    background-color: rgb(224, 224, 224);
+    padding: 10px;
+    width: 300px;
+    height: 9%;
+    width: 9%;
+    border-radius: 10px;
+}
+
+#register a {
     text-decoration: none;
-    color: black;
+    color: rgb(117, 117, 117);
 }
 
 /* #login_info_body {
@@ -44,4 +48,23 @@ button {
     position: absolute;
     top: 52%;
     left: 55%;
+}
+
+#ID, #PW {
+    padding: 15px 10px;
+    border: 0 solid black;
+    border-radius: 10px;
+    background-color: rgb(224, 224, 224);
+}
+
+#login_form div input:hover {
+    background-color: pink;
+}
+
+h1:hover {
+    color: pink;
+}
+
+#register:hover {
+    background-color: pink;
 }

@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원 정보</title>
-    <link rel="stylesheet" href="./introduce_login.css">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- <link rel="stylesheet" href="./introduce_login.css"> -->
+    <script src="./animate.js"></script>
+    <link rel="stylesheet" href="./introduce.css">
 </head>
 <body id="login_info_body">
-
+    <div class="main_menu">
+        <div class="navbar">
+            <h1 class="h1_T">LET ME INTRODUCE MY SELF</h1>
+        </div>
     <div class="Loaeded"><input id="BTN_Download" type='button' value='회원 정보 다운로드' onclick='getDownloadRecord(event)'></input></div>
     <div class="Loaeded"><input type="file" onchange="loadFile(this.files[0])"></div>
     <a href="./introduce_main.html"><button>join</button></a>
@@ -16,6 +22,9 @@
     <script src="./introduce_login.js"></script>
     <script src="./introduce_Set_localstorage.js"></script>
     <script src="./introduce_user_info_view.js"></script>
-    
+    <div class="footer">
+            <h1 class="h1_b">LET ME INTRODUCE MY SELF</h1>
+        </div>
+    </div>
 </body>
 </html>

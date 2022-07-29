@@ -279,3 +279,13 @@ button {
     height: 60px;
     width: 60px;
 }
+
+h1:hover {
+    color: pink;
+}
+
+.Loaeded, #output {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}

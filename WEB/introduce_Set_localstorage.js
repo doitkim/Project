@@ -1,6 +1,5 @@
 var register_submit = document.getElementById("register_submit");
 register_submit.addEventListener("click", function () {
-
 var id = document.getElementById("id");
 var pw = document.getElementById("pw");
 var username = document.getElementById("name");

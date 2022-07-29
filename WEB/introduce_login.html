@@ -7,7 +7,8 @@
     <title>Introduce</title>
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link rel="stylesheet" href="./introduce.css">
-    <link rel="stylesheet" href="./introduce.js">
+    <link rel="stylesheet" href="./introduce_login.js">
+    <link rel="stylesheet" href="./introduce_login.css">
 
     
 
@@ -15,20 +16,21 @@
 <body>
     <div class="main_menu">
         <div class="navbar">
-            <h1>LET ME INTRODUCE MY SELF</h1>
+            <h1 class="h1_T">LET ME INTRODUCE MY SELF</h1>
         </div>
         <div id="form_style">
             <form id="login_form" onsubmit="return false;" method="post" autocomplete="off">
-                <div>아이디: <input id="ID" type="text"></div>
-                <div>비밀번호: <input id="PW" type="password"></div>
+                <div><input id="ID" maxlength="10" placeholder="아이디" type="text"></div>
+                <div><input id="PW" maxlength="10" placeholder="패스워드" type="password"></div>
                 <button id="login_submit" hidden></button>
-                <a href="./introduce_register.html">회원가입</a>
+                <div id="register"><a href="./introduce_register.html">회원 가입</a></div>
             </form>
         </div>
         <script src="./introduce_login.js"></script>
-        <script src="./introduce_Set_localstorage.js"></script>    
+        <script src="./introduce_Set_localstorage.js"></script>
+        <script src="./animate.js"></script>        
         <div class="footer">
-            <h1>LET ME INTRODUCE MY SELF</h1>
+            <h1 class="h1_b">LET ME INTRODUCE MY SELF</h1>
         </div>
     </div>
     
